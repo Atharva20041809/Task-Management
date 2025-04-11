@@ -1,0 +1,103 @@
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2C2C2E; /* Mid-Dark Shade */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    color: #F5F5F5; /* Soft White Text */
+  }
+  
+  h1 .edit,
+  h1 .delete {
+    margin-left: 0.5rem;
+    background-color: transparent;
+    border: 1px solid #D4AF37; /* Gold Accent */
+    color: #D4AF37;
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  h1 .edit:hover {
+    background-color: #D4AF37;
+    color: #1C1C1E; /* Dark background */
+  }
+  
+  h1 .delete {
+    border-color: #EF4444;
+    color: #EF4444;
+  }
+  
+  h1 .delete:hover {
+    background-color: #EF4444;
+    color: #F5F5F5;
+  }
+
+
+.task{
+    background-color: #2C2C2E; /* Mid-Dark Shade */
+    border: 1px solid #D4AF37;
+    border-radius: 6px;
+    padding: 0.25rem 0.6rem;
+    margin: 0.25rem 0.6rem;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    padding: 0.25rem 0.6rem;
+    color: #F5F5F5; /* Soft White Text */
+  }
+  
+  .status input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #10B981; /* Green/Success */
+    padding: 0.25rem 0.6rem;
+    cursor: pointer;
+  }
+  .status.completed {
+    color: #10B981; /* Green/Success */
+    padding: 0.25rem 0.6rem;
+  }
+  
+  .status.inprogress {
+    padding: 0.25rem 0.6rem;
+    color: #F59E0B; /* Optional: Amber for progress */
+  }
+  
+p{
+    padding: 0.25rem 0.6rem;
+}
+.high {
+    color: #EF4444; /* Red for High Priority */
+    padding: 0.25rem 0.6rem;
+    font-weight: bold;
+  }
+  
+  .medium {
+    color: #D4AF37; /* Gold for Medium Priority */
+    padding: 0.25rem 0.6rem;
+    font-weight: bold;
+  }
+  
+  .low {
+    color: #10B981; /* Green for Low Priority */
+    padding: 0.25rem 0.6rem;
+    font-weight: bold;
+  }
+
+  .taskform-tasks{
+    background-color: #2C2C2E; /* Mid-Dark Shade */
+    border: 1px solid #D4AF37;
+    border-radius: 6px;
+    padding: 0.25rem 0.6rem;
+    margin: 0.25rem 0.6rem;
+  }

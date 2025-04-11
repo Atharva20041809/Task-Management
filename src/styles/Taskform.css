@@ -1,0 +1,93 @@
+/* Taskform Styling */
+.taskform {
+    background-color: #2C2C2E; /* Mid-Dark Shade */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.1);
+    width: 100%;
+    max-width: 600px; /* Limit the width of the form */
+    margin: 2rem auto; /* Center the form */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #F5F5F5; /* Soft White Text */
+    font-weight: 600;
+  }
+  
+  /* Input Fields Styling */
+  input[type="text"], input[type="datetime-local"] {
+    padding: 0.75rem;
+    border: 1px solid #D4AF37; /* Gold Accent */
+    border-radius: 8px;
+    background-color: #1C1C1E; /* Dark Base */
+    color: #F5F5F5; /* Soft White Text */
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus, input[type="datetime-local"]:focus {
+    border-color: #10B981; /* Green/Success */
+    outline: none;
+  }
+  
+  /* Priority Radio Buttons Styling */
+  label input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #F5F5F5; /* Soft White Text */
+    font-weight: 600;
+  }
+  
+  input[type="radio"]:checked + label {
+    color: #10B981; /* Green/Success */
+  }
+  
+  /* Button Styling */
+  .btn button {
+    background-color: #D4AF37; /* Gold Accent */
+    color: #1C1C1E; /* Dark Base */
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  
+  .btn button:hover {
+    background-color: #b9952e; /* Darker Gold Accent */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .taskform {
+      padding: 1rem;
+      width: 90%; /* Make form take up more space on smaller screens */
+    }
+  
+    .btn button {
+      padding: 0.75rem 1.5rem;
+    }
+  
+    input[type="text"], input[type="datetime-local"] {
+      padding: 0.5rem;
+    }
+  
+    label {
+      font-size: 0.9rem; /* Smaller text for better readability on mobile */
+    }
+  }
+  

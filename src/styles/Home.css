@@ -1,0 +1,108 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1C1C1E; /* Dark Base */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #F5F5F5; /* Soft White Text */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #2C2C2E; /* Mid-Dark Shade */
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D4AF37; /* Gold Accent */
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  color: #D4AF37; /* Gold Accent */
+}
+
+.routes {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.routes li a {
+  text-decoration: none;
+  color: #F5F5F5; /* Soft White Text */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.routes li a:hover,
+.routes li a.active {
+  color: #D4AF37; /* Gold Accent */
+}
+
+/* Home Page Layout */
+.home .main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Facilities Buttons */
+.facilities {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.addtask,
+.start-pomodoro {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #D4AF37; /* Gold Accent */
+  color: #1C1C1E; /* Dark Base */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addtask:hover,
+.start-pomodoro:hover {
+  background-color: #b9952e;
+}
+
+.plus-sign,
+.play-sign {
+  font-size: 1.2rem;
+}
+
+/* Video Sections */
+.first-video,
+.second-video {
+  background-color: #2C2C2E; /* Mid-Dark Shade */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.1);
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: #D4AF37; /* Gold Accent */
+}
+
+video {
+  
+  width: 80%;
+  border-radius: 8px;
+}
