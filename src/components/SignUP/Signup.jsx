@@ -21,8 +21,12 @@ const Signup = () => {
   }
   function handelclick(event){
     event.preventDefault();
-    if(userdata.password.length==0 || userdata.email.length==0 || userdata.username.length==0 ){
-      alert("Please fill the details properly")
+    if(userdata.password.length==0 || userdata.email.length==0 || userdata.username.length==0 || !userdata.email.includes('@gmail.com')){
+      if(!userdata.email.includes('@gmail.com')){
+        alert('email must include @gmail.com')
+      }else{
+        alert("Please fill the details properly")
+      }
     }else{
       let users=JSON.parse(localStorage.getItem("users"))
       users.push(userdata)
